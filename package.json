@@ -1,0 +1,32 @@
+{
+  "name": "scrapper-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "start": "NODE_ENV=production node dist/app.js",
+    "dev": "NODE_ENV=development nodemon --exec babel-node src/server.js"
+  },
+  "author": "AnyunguC",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.6",
+    "fastify": "^3.15.0",
+    "fastify-cors": "^5.2.0",
+    "fastify-oas": "^3.0.8",
+    "fastify-websocket": "^3.1.0",
+    "fs": "*",
+    "playwright": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.13.15",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7"
+  }
+}
